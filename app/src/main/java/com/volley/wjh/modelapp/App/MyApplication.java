@@ -10,8 +10,8 @@ import com.android.volley.toolbox.Volley;
  * Created by wujh on 2016/2/20.
  * Email:1049334820@qq.com
  */
-public class ModelApp extends Application {
-    private static ModelApp mInstance;
+public class MyApplication extends Application {
+    private static MyApplication mInstance;
     private static Context mContext;
     public static RequestQueue mRequestQueue;
 
@@ -25,15 +25,15 @@ public class ModelApp extends Application {
         return mRequestQueue;
     }
 
-    private ModelApp(Context context){
-        mContext = context;
-    }
-
-    public static synchronized ModelApp getInstance(Context context){
-        if(mInstance == null){
-            mInstance = new ModelApp(context);
-        }
-
-        return mInstance;
-    }
+//    private MyApplication(Context context){
+//        mContext = context;
+//    }
+//
+//    public static synchronized MyApplication getInstance(Context context){
+//        if(mInstance == null){
+//            mInstance = new MyApplication(context);
+//        }
+//
+//        return mInstance;
+//    }
 }

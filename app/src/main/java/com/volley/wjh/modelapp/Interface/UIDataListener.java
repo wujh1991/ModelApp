@@ -1,4 +1,4 @@
-package com.volley.wjh.modelapp.RequestInterface;
+package com.volley.wjh.modelapp.Interface;
 
 /**
  * Created by wujh on 2016/2/20.
