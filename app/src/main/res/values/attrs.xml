@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CountTimeButton">
+        <attr name="ableClickBackground" format="reference|color"/>
+        <attr name="disableClickBackground" format="reference|color"/>
+        <attr name="totalTime" format="integer"/>
+        <attr name="stepTime" format="integer"/>
+    </declare-styleable>
+
+</resources>
