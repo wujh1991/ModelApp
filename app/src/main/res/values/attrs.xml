@@ -6,5 +6,12 @@
         <attr name="totalTime" format="integer"/>
         <attr name="stepTime" format="integer"/>
     </declare-styleable>
+    
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension"/>
+        <attr name="civ_border_color" format="color"/>
+        <attr name="civ_border_overlay" format="integer"/>
+        <attr name="civ_fill_color" format="integer"/>
+    </declare-styleable>
 
 </resources>

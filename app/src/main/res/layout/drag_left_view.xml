@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/lyQQMenuTop"
+        layout="@layout/item_qq_drag_view_left_top"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcvQQMenu"
+        android:layout_below="@+id/lyQQMenuTop"
+        android:layout_above="@+id/lyQQMenuBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"/>
+
+    <include
+        android:id="@+id/lyQQMenuBottom"
+        layout="@layout/item_qq_drag_view_left_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="60dp"/>
+
+</RelativeLayout>

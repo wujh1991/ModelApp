@@ -11,9 +11,13 @@ import java.util.Map;
 public class VolleyHttpUrl {
     public static final String hostUrl = "http://wthrcdn.etouch.cn/";
 
-    public static String urlBuilder(int requestMethod,String methodName,HashMap<String,String> params){
+    public static String urlBuilder(int requestMethod,String ohostUrl,String methodName,HashMap<String,String> params){
         StringBuffer urlSb = new StringBuffer();
-        urlSb.append(hostUrl);
+        if( ! "".equals(ohostUrl) && ohostUrl != null ){
+            urlSb.append(ohostUrl);
+        }else{
+            urlSb.append(hostUrl);
+        }
         urlSb.append(methodName);
         if(requestMethod == 0 && params != null){
             urlSb.append("?");

@@ -16,7 +16,7 @@ public class ImageUtil {
 
     public static void displayImage(ImageView imageView,String url){
         ImageLoader imageLoader = new ImageLoader(MyApplication.getHttpQueue(),new BitmapCache());
-        ImageLoader.ImageListener imageListener = imageLoader.getImageListener(imageView, R.mipmap.ic_launcher,R.mipmap.ic_launcher);
+        ImageLoader.ImageListener imageListener = imageLoader.getImageListener(imageView, R.mipmap.test,R.mipmap.test);
         imageLoader.get(url,imageListener,100,100);
     }
 }

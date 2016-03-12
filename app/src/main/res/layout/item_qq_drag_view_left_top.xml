@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.volley.wjh.modelapp.CustomWidget.CircleImageView
+        android:id="@+id/ivHeadPortrait"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/gril_two"/>
+
+    <TextView
+        android:id="@+id/tvNickName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ivHeadPortrait"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="昵称：天籁之音"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/tvQQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/ivHeadPortrait"
+        android:layout_below="@+id/tvNickName"
+        android:text="QQ:1049334820"
+        android:textColor="#000000"/>
+
+    <ImageView
+        android:id="@+id/ivQRCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvNickName"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/selector_qrcode"/>
+
+    <ImageView
+        android:id="@+id/ivSyh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivHeadPortrait"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="50dp"
+        android:src="@mipmap/ic_syh"/>
+
+    <TextView
+        android:id="@+id/tvMood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivHeadPortrait"
+        android:layout_toRightOf="@+id/ivSyh"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="最近好颓废。。。"
+        android:textColor="#000000"/>
+
+
+</RelativeLayout>

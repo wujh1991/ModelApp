@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/llProvince"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lvProvince"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorPrimary"
+            android:dividerHeight="1dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvCityProvince"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="#6699ff"
+            android:textSize="18sp"/>
+
+        <ListView
+            android:id="@+id/lvCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorPrimary"
+            android:dividerHeight="1dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvAreaProvince"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="#6699ff"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tvAreaCity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:background="#ffcc00"
+            android:textSize="18sp"/>
+
+        <ListView
+            android:id="@+id/lvArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorPrimary"
+            android:dividerHeight="1dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
