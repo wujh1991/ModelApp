@@ -43,7 +43,7 @@ public class RecyclerViewActivity extends BaseActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.addItemDecoration(new RecyclerViewItemDecoration(this));
         //创建并设置Adapter
-        recyclerView.setAdapter(new RecyclerAdapter(new ArrayList<String>(Arrays.asList("java","c++","html","json"))));
+        recyclerView.setAdapter(new RecyclerAdapter(new ArrayList<String>(Arrays.asList("java","c++","html","json")),4));
 
 
     }

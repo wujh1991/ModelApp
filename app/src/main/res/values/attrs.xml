@@ -1,17 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- 倒计时按钮-->
     <declare-styleable name="CountTimeButton">
-        <attr name="ableClickBackground" format="reference|color"/>
-        <attr name="disableClickBackground" format="reference|color"/>
-        <attr name="totalTime" format="integer"/>
-        <attr name="stepTime" format="integer"/>
+        <attr name="ableClickBackground" format="reference|color" />
+        <attr name="disableClickBackground" format="reference|color" />
+        <attr name="totalTime" format="integer" />
+        <attr name="stepTime" format="integer" />
     </declare-styleable>
-    
+
+    <!-- 圆形图片 -->
     <declare-styleable name="CircleImageView">
-        <attr name="civ_border_width" format="dimension"/>
-        <attr name="civ_border_color" format="color"/>
-        <attr name="civ_border_overlay" format="integer"/>
-        <attr name="civ_fill_color" format="integer"/>
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="integer" />
+        <attr name="civ_fill_color" format="integer" />
     </declare-styleable>
+
+    <!-- 颜色渐变的图标文本控件-->
+    <declare-styleable name="ChangeColorIconWithText">
+        <attr name="ciwt_icon" format="reference" />
+        <attr name="ciwt_color" format="color" />
+        <attr name="ciwt_text" format="string" />
+        <attr name="ciwt_text_size" format="dimension" />
+    </declare-styleable>
+
+    <!-- 自定义SwipeRefreshLayout -->
+    <declare-styleable name="CustomSwipeRefreshLayout">
+        <attr name="scrollableChildId" format="reference"/>
+    </declare-styleable>
+
+    <!-- 自定义卫星菜单-->
+    <declare-styleable name="ArcMenu">
+        <attr name="radius" format="dimension"/>
+        <attr name="position" >
+            <enum name="let_top" value="0"/>
+            <enum name="right_top" value="1"/>
+            <enum name="left_bottom" value="2"/>
+            <enum name="right_bottom" value="3"/>
+            <enum name="center_bottom" value="4"/>
+        </attr>
+    </declare-styleable>
+
+    <!-- 圆形进度条-->
+    <declare-styleable name="CircleProgressBar">
+        <attr name="mlpb_inner_radius" format="dimension" />
+        <attr name="mlpb_background_color" format="color" />
+        <attr name="mlpb_progress_color" format="color" />
+        <attr name="mlpb_progress_stoke_width" format="dimension" />
+        <attr name="mlpb_show_arrow" format="boolean" />
+        <attr name="mlpb_enable_circle_background" format="boolean" />
+        <attr name="mlpb_arrow_width" format="dimension" />
+        <attr name="mlpb_arrow_height" format="dimension" />
+
+        <attr name="mlpb_progress" format="integer" />
+        <attr name="mlpb_max" format="integer" />
+
+
+        <attr name="mlpb_progress_text_size" format="dimension" />
+        <attr name="mlpb_progress_text_color" format="color" />
+
+        <!--<attr name="mlpb_progress_text_offset" format="dimension"/>-->
+
+        <attr name="mlpb_progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+
 
 </resources>

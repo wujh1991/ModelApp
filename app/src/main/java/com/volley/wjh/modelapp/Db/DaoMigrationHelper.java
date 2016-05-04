@@ -1,0 +1,171 @@
+package com.volley.wjh.modelapp.Db;
+
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.text.TextUtils;
+import android.util.Log;
+
+import com.volley.wjh.dao.DaoMaster;
+import com.volley.wjh.dao.UserDao;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import de.greenrobot.dao.AbstractDao;
+import de.greenrobot.dao.internal.DaoConfig;
+
+/**
+ * Created by wujh on 2016/4/3.
+ * Email:1049334820@qq.com
+ * DaoGreen数据库安全升级帮助类
+ */
+public class DaoMigrationHelper {
+    private static final String CONVERSION_CLASS_NOT_FOUND_EXCEPTION = "MIGRATION HELPER - CLASS DOESN'T MATCH WITH THE CURRENT PARAMETERS";
+    private static DaoMigrationHelper instance;
+
+    public static DaoMigrationHelper getInstance() {
+        if(instance == null) {
+            instance = new DaoMigrationHelper();
+        }
+        return instance;
+    }
+
+    public void migrate(SQLiteDatabase db, Class<? extends AbstractDao<?, ?>>... daoClasses) {
+        generateTempTables(db, daoClasses);
+//        DaoMaster.dropAllTables(db, true);
+//        DaoMaster.createAllTables(db, false);
+        //wjh+++
+        dropTables(db);
+        createTables(db);
+        //
+        restoreData(db, daoClasses);
+    }
+
+    //删除表
+    private void dropTables(SQLiteDatabase db){
+        UserDao.dropTable(db,true);
+    }
+
+    //创建表
+    private void createTables(SQLiteDatabase db){
+        UserDao.createTable(db,false);
+    }
+
+    private void generateTempTables(SQLiteDatabase db, Class<? extends AbstractDao<?, ?>>... daoClasses) {
+        for(int i = 0; i < daoClasses.length; i++) {
+            DaoConfig daoConfig = new DaoConfig(db, daoClasses[i]);
+
+            String divider = "";
+            String tableName = daoConfig.tablename;
+            String tempTableName = daoConfig.tablename.concat("_TEMP");
+            ArrayList<String> properties = new ArrayList<String>();
+
+            StringBuilder createTableStringBuilder = new StringBuilder();
+
+            createTableStringBuilder.append("CREATE TABLE ").append(tempTableName).append(" (");
+
+            for(int j = 0; j < daoConfig.properties.length; j++) {
+                String columnName = daoConfig.properties[j].columnName;
+
+                if(getColumns(db, tableName).contains(columnName)) {
+                    properties.add(columnName);
+
+                    String type = null;
+
+                    try {
+                        type = getTypeByClass(daoConfig.properties[j].type);
+                    } catch (Exception exception) {
+                    }
+
+                    createTableStringBuilder.append(divider).append(columnName).append(" ").append(type);
+
+                    if(daoConfig.properties[j].primaryKey) {
+                        createTableStringBuilder.append(" PRIMARY KEY");
+                    }
+
+                    divider = ",";
+                }
+            }
+            createTableStringBuilder.append(");");
+
+            db.execSQL(createTableStringBuilder.toString());
+
+            StringBuilder insertTableStringBuilder = new StringBuilder();
+
+            insertTableStringBuilder.append("INSERT INTO ").append(tempTableName).append(" (");
+            insertTableStringBuilder.append(TextUtils.join(",", properties));
+            insertTableStringBuilder.append(") SELECT ");
+            insertTableStringBuilder.append(TextUtils.join(",", properties));
+            insertTableStringBuilder.append(" FROM ").append(tableName).append(";");
+
+            db.execSQL(insertTableStringBuilder.toString());
+        }
+    }
+
+    private void restoreData(SQLiteDatabase db, Class<? extends AbstractDao<?, ?>>... daoClasses) {
+        for(int i = 0; i < daoClasses.length; i++) {
+            DaoConfig daoConfig = new DaoConfig(db, daoClasses[i]);
+
+            String tableName = daoConfig.tablename;
+            String tempTableName = daoConfig.tablename.concat("_TEMP");
+            ArrayList<String> properties = new ArrayList();
+
+            for (int j = 0; j < daoConfig.properties.length; j++) {
+                String columnName = daoConfig.properties[j].columnName;
+
+                if(getColumns(db, tempTableName).contains(columnName)) {
+                    properties.add(columnName);
+                }
+            }
+
+            StringBuilder insertTableStringBuilder = new StringBuilder();
+
+            insertTableStringBuilder.append("INSERT INTO ").append(tableName).append(" (");
+            insertTableStringBuilder.append(TextUtils.join(",", properties));
+            insertTableStringBuilder.append(") SELECT ");
+            insertTableStringBuilder.append(TextUtils.join(",", properties));
+            insertTableStringBuilder.append(" FROM ").append(tempTableName).append(";");
+
+            StringBuilder dropTableStringBuilder = new StringBuilder();
+
+            dropTableStringBuilder.append("DROP TABLE ").append(tempTableName);
+
+            db.execSQL(insertTableStringBuilder.toString());
+            db.execSQL(dropTableStringBuilder.toString());
+        }
+    }
+
+    private String getTypeByClass(Class<?> type) throws Exception {
+        if(type.equals(String.class)) {
+            return "TEXT";
+        }
+        if(type.equals(Long.class) || type.equals(Integer.class) || type.equals(long.class)) {
+            return "INTEGER";
+        }
+        if(type.equals(Boolean.class)) {
+            return "BOOLEAN";
+        }
+
+        Exception exception = new Exception(CONVERSION_CLASS_NOT_FOUND_EXCEPTION.concat(" - Class: ").concat(type.toString()));
+        throw exception;
+    }
+
+    private static List<String> getColumns(SQLiteDatabase db, String tableName) {
+        List<String> columns = new ArrayList<String>();
+        Cursor cursor = null;
+        try {
+            cursor = db.rawQuery("SELECT * FROM " + tableName + " limit 1", null);
+            if (cursor != null) {
+                columns = new ArrayList<String>(Arrays.asList(cursor.getColumnNames()));
+            }
+        } catch (Exception e) {
+            Log.v(tableName, e.getMessage(), e);
+            e.printStackTrace();
+        } finally {
+            if (cursor != null)
+                cursor.close();
+        }
+        return columns;
+    }
+}

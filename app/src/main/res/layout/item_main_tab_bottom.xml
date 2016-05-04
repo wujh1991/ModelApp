@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyman="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#6699ff"
@@ -10,37 +11,46 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <com.volley.wjh.modelapp.CustomWidget.ChangeColorIconWithText
+            android:id="@+id/ciwtOne"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_decoration"
-            android:gravity="center"
-            android:text="描述" />
+            hyman:ciwt_color="#ff45c01A"
+            hyman:ciwt_icon="@drawable/icon_tab_one"
+            hyman:ciwt_text="控件"
+            hyman:ciwt_text_size="12sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <com.volley.wjh.modelapp.CustomWidget.ChangeColorIconWithText
+            android:id="@+id/ciwtTwo"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_favorit"
-            android:gravity="center"
-            android:text="收藏" />
+            hyman:ciwt_color="#ff45c01A"
+            hyman:ciwt_icon="@drawable/icon_tab_two"
+            hyman:ciwt_text="网络"
+            hyman:ciwt_text_size="12sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <com.volley.wjh.modelapp.CustomWidget.ChangeColorIconWithText
+            android:id="@+id/ciwtThree"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_file"
-            android:gravity="center"
-            android:text="文件" />
+            hyman:ciwt_color="#ff45c01A"
+            hyman:ciwt_icon="@drawable/ico_tab_three"
+            hyman:ciwt_text="第三方"
+            hyman:ciwt_text_size="12sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <com.volley.wjh.modelapp.CustomWidget.ChangeColorIconWithText
+            android:id="@+id/ciwtFour"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:drawableTop="@mipmap/ic_album"
-            android:gravity="center"
-            android:text="相册" />
+            hyman:ciwt_color="#ff45c01A"
+            hyman:ciwt_icon="@mipmap/ic_album"
+            hyman:ciwt_text="数据库"
+            hyman:ciwt_text_size="12sp" />
+
 
     </LinearLayout>
 

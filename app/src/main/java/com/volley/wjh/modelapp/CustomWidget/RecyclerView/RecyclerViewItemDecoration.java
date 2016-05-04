@@ -12,25 +12,24 @@ import android.view.View;
  * Email:1049334820@qq.com
  */
 public class RecyclerViewItemDecoration extends RecyclerView.ItemDecoration {
-    private static final int[] ATTR = {android.R.attr.listDivider};
+    private static final int[] ATTRS = {android.R.attr.listDivider};
     private Drawable mDivider;
 
     public RecyclerViewItemDecoration(Context context){
-        TypedArray typedArray = context.obtainStyledAttributes(ATTR);
+        TypedArray typedArray = context.obtainStyledAttributes(ATTRS);
         mDivider = typedArray.getDrawable(0);
         typedArray.recycle();
     }
 
     @Override
     public void onDrawOver(Canvas c, RecyclerView parent, RecyclerView.State state) {
-        super.onDrawOver(c, parent, state);
-        int count = parent.getChildCount();
         int left = parent.getPaddingLeft();
         int right = parent.getWidth() - parent.getPaddingRight();
-        for(int i = 0;i < count;i++){
-            View view = parent.getChildAt(i);
-            RecyclerView.LayoutParams params =  (RecyclerView.LayoutParams)view.getLayoutParams();
-            int top = view.getBottom() + params.bottomMargin;
+        int childCount = parent.getChildCount();
+        for(int i = 0;i < childCount;i++){
+            View child = parent.getChildAt(i);
+            RecyclerView.LayoutParams params =  (RecyclerView.LayoutParams)child.getLayoutParams();
+            int top = child.getBottom() + params.bottomMargin;
             int bottom = top + mDivider.getIntrinsicHeight();
             mDivider.setBounds(left,top,right,bottom);
             mDivider.draw(c);

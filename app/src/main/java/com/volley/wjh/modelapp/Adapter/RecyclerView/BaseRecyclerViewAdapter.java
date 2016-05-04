@@ -18,7 +18,7 @@ import java.util.List;
  * Created by wujh on 2016/3/6.
  * Email:1049334820@qq.com
  */
-public abstract class BaseRecyclerViewAdapter<T,VH extends BaseRecyclerViewAdapter.SparseArrayViewHolder> extends RecyclerView.Adapter<VH>{
+public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<BaseRecyclerViewAdapter.SparseArrayViewHolder> {
 
     protected OnRecyclerViewItemClickListener mOnRecyclerViewItemClickListener;
 
@@ -26,12 +26,16 @@ public abstract class BaseRecyclerViewAdapter<T,VH extends BaseRecyclerViewAdapt
 
     private List<T> mList;
 
-    public BaseRecyclerViewAdapter(List<T> list){
+    public BaseRecyclerViewAdapter(List<T> list) {
         this.mList = list;
     }
 
-    protected  T getItem(int position){
-        return mList.get(position);
+    protected T getItem(int position) {
+        if (position < mList.size()) {
+            return mList.get(position);
+        } else {
+            return null;
+        }
     }
 
     @Override
@@ -39,11 +43,11 @@ public abstract class BaseRecyclerViewAdapter<T,VH extends BaseRecyclerViewAdapt
         return mList.size();
     }
 
-    public void setmOnRecyclerViewItemClickListener(OnRecyclerViewItemClickListener onRecyclerViewItemClickListener){
+    public void setmOnRecyclerViewItemClickListener(OnRecyclerViewItemClickListener onRecyclerViewItemClickListener) {
         this.mOnRecyclerViewItemClickListener = onRecyclerViewItemClickListener;
     }
 
-    public void setmOnRecyclerViewItemLongClickListener(OnRecyclerViewItemLongClickListener onRecyclerViewItemLongClickListener){
+    public void setmOnRecyclerViewItemLongClickListener(OnRecyclerViewItemLongClickListener onRecyclerViewItemLongClickListener) {
         this.mOnRecyclerViewItemLongClickListener = onRecyclerViewItemLongClickListener;
     }
 
@@ -56,22 +60,23 @@ public abstract class BaseRecyclerViewAdapter<T,VH extends BaseRecyclerViewAdapt
     }
 
     @Override
-    public final void onBindViewHolder(VH vh, int position) {
-        final T item = getItem(position);
-        bindDataToItemView(vh, item,position);
-        bindItemViewClickListener(vh, item,position);
+    public void onBindViewHolder(BaseRecyclerViewAdapter.SparseArrayViewHolder vh, int position) {
+        T item = getItem(position);
+        bindDataToItemView(vh, item, position);
+        if(item != null){
+            bindItemViewClickListener(vh, item, position);
+        }
     }
 
 
+    protected abstract void bindDataToItemView(BaseRecyclerViewAdapter.SparseArrayViewHolder vh, T item, int position);
 
-    protected abstract void bindDataToItemView(VH vh, T item,int position);
-
-    protected final void bindItemViewClickListener(VH vh, final T item, final int position) {
+    protected final void bindItemViewClickListener(BaseRecyclerViewAdapter.SparseArrayViewHolder vh, final T item, final int position) {
         if (mOnRecyclerViewItemClickListener != null) {
             vh.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    mOnRecyclerViewItemClickListener.onClick(view, item,position);
+                    mOnRecyclerViewItemClickListener.onClick(view, item, position);
                 }
             });
         }
@@ -79,26 +84,26 @@ public abstract class BaseRecyclerViewAdapter<T,VH extends BaseRecyclerViewAdapt
             vh.itemView.setOnLongClickListener(new View.OnLongClickListener() {
                 @Override
                 public boolean onLongClick(View v) {
-                    mOnRecyclerViewItemLongClickListener.onLongClick(v, item,position);
+                    mOnRecyclerViewItemLongClickListener.onLongClick(v, item, position);
                     return true;
                 }
             });
         }
     }
 
-    public static class SparseArrayViewHolder extends RecyclerView.ViewHolder{
+    public static class SparseArrayViewHolder extends RecyclerView.ViewHolder {
         private final SparseArray<View> views;
 
-        public SparseArrayViewHolder(View itemView){
+        public SparseArrayViewHolder(View itemView) {
             super(itemView);
             views = new SparseArray<View>();
         }
 
-        public <T extends View> T getView(int id){
+        public <T extends View> T getView(int id) {
             View view = views.get(id);
-            if(view == null){
+            if (view == null) {
                 view = itemView.findViewById(id);
-                views.put(id,view);
+                views.put(id, view);
             }
             return (T) view;
         }

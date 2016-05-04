@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlFooter"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <!--  style="?android:attr/progressBarStyleSmall"
+         style="@android:style/Widget.ProgressBar.Small"-->
+        <ProgressBar
+            android:id="@+id/pbFooter"
+            style="@style/FooterLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tvFooter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="加载中。。。" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -7,11 +7,11 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
 
     <application
+        android:name="com.volley.wjh.modelapp.App.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:name="com.volley.wjh.modelapp.App.MyApplication"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".UI.MainActivity">
             <intent-filter>
@@ -21,17 +21,40 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".UI.SwpeRefreshLayoutActivity"/>
+        <activity android:name=".UI.SwpeRefreshLayoutActivity" />
 
-        <activity android:name=".UI.RecyclerViewActivity"/>
+        <activity android:name=".UI.RecyclerViewActivity" />
 
-        <activity android:name=".UI.GridViewWithRecyclerViewActivity"/>
+        <activity android:name=".UI.GridViewWithRecyclerViewActivity" />
 
-        <activity android:name=".UI.WaterFallViewWithRecyclerViewActivity"/>
+        <activity android:name=".UI.WaterFallViewWithRecyclerViewActivity" />
 
-        <activity android:name=".wxapi.WXEntryActivity"/>
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true" />
 
-        <activity android:name=".UI.AddressSelectActivity"/>
+        <activity android:name=".UI.WXShareActivity" />
+
+        <activity android:name=".UI.AddressSelectActivity" />
+
+        <activity android:name=".UI.MeterialProgressActivity" />
+
+        <activity android:name=".UI.GreenDaoActivity" />
+
+        <activity android:name=".UI.CardViewActivity" />
+
+        <activity android:name=".UI.BannerViewActivity" />
+
+        <activity android:name=".UI.AsyncHttpActivity" />
+
+        <activity android:name=".UI.PullToRefreshActivity" />
+
+        <activity android:name=".UI.ArcMenuActivity"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <activity
+            android:name=".CustomWidget.SwipeView.MySwipeBackActivity"
+            android:theme="@android:style/Theme.Translucent" />
 
         <receiver android:name=".Update.ApkDownloadBroadcastReceiver">
             <intent-filter>
@@ -39,11 +62,12 @@
             </intent-filter>
         </receiver>
 
-        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
-             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data
-            android:name="com.google.android.gms.version"
-            android:value="@integer/google_play_services_version" />
+            android:name="UMENG_APPKEY"
+            android:value="@string/umeng_appkey"></meta-data>
+        <meta-data
+            android:name="APP_KEY"
+            android:value="@string/app_key" />
     </application>
 
 </manifest>

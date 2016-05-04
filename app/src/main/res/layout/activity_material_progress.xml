@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.volley.wjh.modelapp.CustomWidget.LoadingDialog.CircleProgressBar
+        android:id="@+id/mProgressBar"
+        app:mlpb_progress_color="#566da9"
+        app:mlpb_progress_stoke_width="3dp"
+        app:mlpb_progress_text_visibility="invisible"
+        app:mlpb_show_arrow="true"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>

@@ -1,77 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Volley"
-        android:id="@+id/btnVolley"
-        android:layout_below="@+id/ivDrag"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SwipeRefreshLayout"
-        android:id="@+id/btnSwipeRefreshLayout"
-        android:layout_below="@+id/btnVolley"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RecyclerView"
-        android:id="@+id/btnRecyclerView"
-        android:layout_below="@+id/btnSwipeRefreshLayout"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GridView"
-        android:id="@+id/btnGridView"
-        android:layout_below="@+id/btnRecyclerView"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp" />
+            <Button
+                android:id="@+id/btnBanner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="广告页" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WaterFallView"
-        android:id="@+id/btnWaterFallView"
-        android:layout_below="@+id/btnGridView"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp" />
+            <Button
+                android:id="@+id/btnSwipeRefreshLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnVolley"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="SwipeRefreshLayout" />
 
-    <com.volley.wjh.modelapp.CustomWidget.CountTimeButton
-        android:id="@+id/cbtnTime"
-        android:layout_below="@+id/btnWaterFallView"
-        android:background="#6c948b"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:padding="5dp"
-        app:totalTime="60000"
-        app:stepTime="1000"
-        app:ableClickBackground="#6c948b"
-        app:disableClickBackground="#f2f3f3"
-        android:text="获取验证码"/>
+            <Button
+                android:id="@+id/btnRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnSwipeRefreshLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="RecyclerView" />
 
-    <Button
-        android:id="@+id/btnWxLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
-        android:layout_below="@+id/imageView"
-        android:text="WXLogin"/>
+            <Button
+                android:id="@+id/btnGridView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnRecyclerView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="GridView" />
+
+            <Button
+                android:id="@+id/btnWaterFallView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnGridView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="WaterFallView" />
+
+            <com.volley.wjh.modelapp.CustomWidget.CountTimeButton
+                android:id="@+id/cbtnTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnWaterFallView"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="#6c948b"
+                android:padding="5dp"
+                android:text="获取验证码"
+                app:ableClickBackground="#6c948b"
+                app:disableClickBackground="#f2f3f3"
+                app:stepTime="1000"
+                app:totalTime="60000" />
+
+            <Button
+                android:id="@+id/btnAppDownLoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="App下载" />
+
+
+            <Button
+                android:id="@+id/btnAddressSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="地址选择" />
+
+            <Button
+                android:id="@+id/btnMeterialProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="MeterialProgress" />
+
+            <Button
+                android:id="@+id/btnLoadingDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="LoadingDialog" />
+
+            <Button
+                android:id="@+id/btnCardVIew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="CardView" />
+
+            <Button
+                android:id="@+id/btnPullToRefresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="PullToRefresh" />
+
+            <Button
+                android:id="@+id/btnSwipeBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="SwipeBack" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

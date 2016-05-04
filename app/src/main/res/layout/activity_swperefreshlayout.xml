@@ -1,20 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#bfbfbf">
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <com.volley.wjh.modelapp.CustomWidget.MSwpeRefreshLayout
         android:id="@+id/sp_lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:scrollableChildId = "@+id/rv_my">
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_my"
+        <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
-        </android.support.v7.widget.RecyclerView>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_my"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </android.support.v4.widget.SwipeRefreshLayout>
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/llNotData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="没有数据"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNotNetwork"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="没有网络"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.volley.wjh.modelapp.CustomWidget.MSwpeRefreshLayout>
 
 </RelativeLayout>

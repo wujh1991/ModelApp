@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.volley.wjh.modelapp.CustomWidget.DragLayout
+<com.volley.wjh.modelapp.CustomWidget.DragView.DragLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +10,7 @@
 
 <include layout="@layout/drag_left_view"/>
 
-<com.volley.wjh.modelapp.CustomWidget.DragRelativeLayout
+<com.volley.wjh.modelapp.CustomWidget.DragView.DragRelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#bfbfbf">
@@ -29,9 +29,9 @@
     <include
         android:id="@+id/llMainTabBottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         layout="@layout/item_main_tab_bottom"/>
 
-</com.volley.wjh.modelapp.CustomWidget.DragRelativeLayout>
-</com.volley.wjh.modelapp.CustomWidget.DragLayout>
+</com.volley.wjh.modelapp.CustomWidget.DragView.DragRelativeLayout>
+</com.volley.wjh.modelapp.CustomWidget.DragView.DragLayout>

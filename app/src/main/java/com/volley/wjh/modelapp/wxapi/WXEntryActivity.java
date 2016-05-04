@@ -1,5 +1,7 @@
 package com.volley.wjh.modelapp.wxapi;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -24,6 +26,13 @@ import com.volley.wjh.modelapp.R;
  */
 public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler,View.OnClickListener{
     private Button btnWxLogin;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        MyApplication.mWxapi.handleIntent(getIntent(),this);
+    }
+
     @Override
     public int getResourceLayout() {
         return R.layout.activity_wx_login;
@@ -97,13 +106,17 @@ public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler,
 
     @Override
     public void onResp(BaseResp baseResp) {
-        switch (baseResp.errCode){
-            case BaseResp.ErrCode.ERR_OK:
-                String code = ((SendAuth.Resp)baseResp).code;
-                sendGetAccessTokenRequest(code);
-                break;
+        if(baseResp != null){
+            switch (baseResp.errCode){
+                case BaseResp.ErrCode.ERR_OK:
+//                String code = ((SendAuth.Resp)baseResp).code;
+//                sendGetAccessTokenRequest(code);
+                    break;
+
+            }
 
         }
+
     }
 
     @Override
@@ -114,5 +127,11 @@ public class WXEntryActivity extends BaseActivity implements IWXAPIEventHandler,
                 sendAuthRequest();
                 break;
         }
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        MyApplication.mWxapi.handleIntent(getIntent(), this);
     }
 }
