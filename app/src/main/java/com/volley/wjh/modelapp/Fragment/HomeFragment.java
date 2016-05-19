@@ -10,12 +10,15 @@ import android.widget.Button;
 
 import com.volley.wjh.modelapp.Base.Fragment.BaseFragment;
 import com.volley.wjh.modelapp.CustomWidget.CountTimeButton;
+import com.volley.wjh.modelapp.CustomWidget.ExpandMenu.FoldMenuActivity;
 import com.volley.wjh.modelapp.CustomWidget.LoadingDialog.WLoadingDialog;
 import com.volley.wjh.modelapp.CustomWidget.LoadingDialog.ZProgressHUD;
+import com.volley.wjh.modelapp.CustomWidget.PullToRefresh2.TestActivity;
 import com.volley.wjh.modelapp.CustomWidget.SwipeView.MySwipeBackActivity;
 import com.volley.wjh.modelapp.R;
 import com.volley.wjh.modelapp.UI.AddressSelectActivity;
 import com.volley.wjh.modelapp.UI.BannerViewActivity;
+import com.volley.wjh.modelapp.UI.BitMapSampleSizeActivity;
 import com.volley.wjh.modelapp.UI.CardViewActivity;
 import com.volley.wjh.modelapp.UI.GridViewWithRecyclerViewActivity;
 import com.volley.wjh.modelapp.UI.MeterialProgressActivity;
@@ -46,6 +49,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
     private Button btnPullToRefresh;
     private Button btnSwipeBack;
+    private Button btnFoldMenu;
+    private Button btnBitMapSimple;
 
 
     @Nullable
@@ -74,6 +79,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         btnCardVIew = (Button) rootView.findViewById(R.id.btnCardVIew);
         btnPullToRefresh = (Button) rootView.findViewById(R.id.btnPullToRefresh);
         btnSwipeBack = (Button) rootView.findViewById(R.id.btnSwipeBack);
+        btnFoldMenu = (Button) rootView.findViewById(R.id.btnFoldMenu);
+        btnBitMapSimple = (Button) rootView.findViewById(R.id.btnBitMapSimple);
     }
 
     @Override
@@ -95,6 +102,8 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         btnCardVIew.setOnClickListener(this);
         btnPullToRefresh.setOnClickListener(this);
         btnSwipeBack.setOnClickListener(this);
+        btnFoldMenu.setOnClickListener(this);
+        btnBitMapSimple.setOnClickListener(this);
     }
 
     @Override
@@ -132,11 +141,17 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 startActivity(new Intent(getActivity(), CardViewActivity.class));
                 break;
             case R.id.btnPullToRefresh:
-                startActivity(new Intent(getActivity(), PullToRefreshActivity.class));
+//                startActivity(new Intent(getActivity(), PullToRefreshActivity.class));
+                startActivity(new Intent(getActivity(), TestActivity.class));
                 break;
             case R.id.btnSwipeBack:
                 startActivity(new Intent(getActivity(), MySwipeBackActivity.class));
                 break;
+            case R.id.btnFoldMenu:
+                startActivity(new Intent(getActivity(), FoldMenuActivity.class));
+                break;
+            case R.id.btnBitMapSimple:
+                startActivity(new Intent(getActivity(), BitMapSampleSizeActivity.class));
         }
     }
 

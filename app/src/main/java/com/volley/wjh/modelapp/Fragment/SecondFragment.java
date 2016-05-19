@@ -6,6 +6,7 @@ import android.widget.Button;
 
 import com.volley.wjh.modelapp.Base.Fragment.BaseFragment;
 import com.volley.wjh.modelapp.R;
+import com.volley.wjh.modelapp.UI.BDMapActivity;
 import com.volley.wjh.modelapp.wxapi.WXEntryActivity;
 import com.volley.wjh.modelapp.UI.WXShareActivity;
 
@@ -16,6 +17,7 @@ import com.volley.wjh.modelapp.UI.WXShareActivity;
 public class SecondFragment extends BaseFragment implements View.OnClickListener {
     private Button btnWxLogin;
     private Button btnWxShare;
+    private Button btnBdMap;
 
     @Override
     public int getResourceLayout() {
@@ -26,6 +28,7 @@ public class SecondFragment extends BaseFragment implements View.OnClickListener
     public void findViews(View rootView) {
         btnWxLogin = (Button) rootView.findViewById(R.id.btnWxLogin);
         btnWxShare = (Button) rootView.findViewById(R.id.btnWxShare);
+        btnBdMap = (Button) rootView.findViewById(R.id.btnBdMap);
     }
 
     @Override
@@ -37,6 +40,7 @@ public class SecondFragment extends BaseFragment implements View.OnClickListener
     public void setListener() {
         btnWxLogin.setOnClickListener(this);
         btnWxShare.setOnClickListener(this);
+        btnBdMap.setOnClickListener(this);
     }
 
     @Override
@@ -48,6 +52,8 @@ public class SecondFragment extends BaseFragment implements View.OnClickListener
             case R.id.btnWxShare:
                 startActivity(new Intent(getActivity(), WXShareActivity.class));
                 break;
+            case R.id.btnBdMap:
+                startActivity(new Intent(getActivity(), BDMapActivity.class));
         }
     }
 }

@@ -20,4 +20,13 @@
         android:text="WxShare"
         android:layout_marginTop="10dp"/>
 
+
+    <Button
+        android:id="@+id/btnBdMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="百度地图"
+        android:layout_marginTop="10dp"/>
+
 </LinearLayout>

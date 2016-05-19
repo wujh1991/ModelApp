@@ -16,8 +16,9 @@ import com.volley.wjh.modelapp.Base.Fragment.BaseFragment;
 import com.volley.wjh.modelapp.CustomWidget.LoadingDialog.WLoadingDialog;
 import com.volley.wjh.modelapp.CustomWidget.LoadingDialog.ZProgressHUD;
 import com.volley.wjh.modelapp.DataModel.Weather;
-import com.volley.wjh.modelapp.HttpRequest.GetVolleyHttpUrl;
-import com.volley.wjh.modelapp.HttpRequest.VolleyHttpRequest;
+//import com.volley.wjh.modelapp.HttpRequest.Retrofit.RetrofitActivity;
+import com.volley.wjh.modelapp.HttpRequest.Volley.GetVolleyHttpUrl;
+import com.volley.wjh.modelapp.HttpRequest.Volley.VolleyHttpRequest;
 import com.volley.wjh.modelapp.R;
 import com.volley.wjh.modelapp.UI.AsyncHttpActivity;
 
@@ -28,6 +29,7 @@ import com.volley.wjh.modelapp.UI.AsyncHttpActivity;
 public class FirstFragment extends BaseFragment implements View.OnClickListener {
     private Button btnVolley;
     private Button btnAsyncHttp;
+    private  Button btnRetrofit;
 
     private WLoadingDialog wLoadingDialog;
 
@@ -48,6 +50,7 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
     public void findViews(View rootView) {
         btnVolley = (Button) rootView.findViewById(R.id.btnVolley);
         btnAsyncHttp = (Button) rootView.findViewById(R.id.btnAsyncHttp);
+        btnRetrofit = (Button) rootView.findViewById(R.id.btnRetrofit);
     }
 
     @Override
@@ -59,6 +62,7 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
     public void setListener() {
         btnVolley.setOnClickListener(this);
         btnAsyncHttp.setOnClickListener(this);
+        btnRetrofit.setOnClickListener(this);
     }
 
     @Override
@@ -69,6 +73,9 @@ public class FirstFragment extends BaseFragment implements View.OnClickListener 
                 break;
             case R.id.btnAsyncHttp:
                 startActivity(new Intent(getActivity(), AsyncHttpActivity.class));
+                break;
+            case R.id.btnRetrofit:
+//                startActivity(new Intent(getActivity(), RetrofitActivity.class));
                 break;
         }
     }

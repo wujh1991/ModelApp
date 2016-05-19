@@ -146,7 +146,7 @@ public class MainActivity extends BaseFragmentActivity implements View.OnClickLi
     }
 
     public void showImage() {
-        ImageUtil.displayImage(civHeadPortrait, "http://img3.imgtn.bdimg.com/it/u=1301955051,2845257222&fm=21&gp=0.jpg");
+       ImageUtil.displayImage(civHeadPortrait, "http://img.my.csdn.net/uploads/201404/13/1397393290_5765.jpeg");
     }
 
     public void initDragLayout() {
@@ -164,7 +164,7 @@ public class MainActivity extends BaseFragmentActivity implements View.OnClickLi
 
             @Override
             public void onDrag(float percent) {
-                ViewHelper.setAlpha(civHeadPortrait, 1 - percent);
+//                ViewHelper.setAlpha(civHeadPortrait, 1 - percent);
             }
         });
     }

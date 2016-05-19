@@ -131,6 +131,22 @@
                 android:layout_marginTop="10dp"
                 android:text="SwipeBack" />
 
+            <Button
+                android:id="@+id/btnFoldMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="FoldMenu" />
+
+            <Button
+                android:id="@+id/btnBitMapSimple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="BitMapSimple" />
+
         </LinearLayout>
 
     </ScrollView>

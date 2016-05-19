@@ -41,6 +41,12 @@
         </attr>
     </declare-styleable>
 
+    <!-- 收缩菜单-->
+    <declare-styleable name="FoldingMenu">
+        <attr name="foldNumber" format="integer" />
+    </declare-styleable>
+
+
     <!-- 圆形进度条-->
     <declare-styleable name="CircleProgressBar">
         <attr name="mlpb_inner_radius" format="dimension" />

@@ -65,8 +65,9 @@ public class CircleImageView extends ImageView{
     private boolean mBorderOverlay;
 
     public CircleImageView(Context context) {
-        super(context);
-        init();
+//        super(context);
+//        init();
+        this(context,null,0);
     }
 
     public CircleImageView(Context context, AttributeSet attrs) {

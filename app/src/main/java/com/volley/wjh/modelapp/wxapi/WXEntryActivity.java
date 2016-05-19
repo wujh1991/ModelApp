@@ -16,8 +16,8 @@ import com.volley.wjh.modelapp.App.MyApplication;
 import com.volley.wjh.modelapp.Base.Activity.BaseActivity;
 import com.volley.wjh.modelapp.DataModel.WXAccessToken;
 import com.volley.wjh.modelapp.DataModel.WXUserInfo;
-import com.volley.wjh.modelapp.HttpRequest.GetVolleyHttpUrl;
-import com.volley.wjh.modelapp.HttpRequest.VolleyHttpRequest;
+import com.volley.wjh.modelapp.HttpRequest.Volley.GetVolleyHttpUrl;
+import com.volley.wjh.modelapp.HttpRequest.Volley.VolleyHttpRequest;
 import com.volley.wjh.modelapp.R;
 
 /**

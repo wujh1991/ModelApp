@@ -9,8 +9,8 @@ import android.widget.Toast;
 
 import com.loopj.android.http.RequestParams;
 import com.volley.wjh.modelapp.Base.Activity.BaseActivity;
-import com.volley.wjh.modelapp.HttpRequest.AsyncHttpCallBack;
-import com.volley.wjh.modelapp.HttpRequest.AsyncHttpRequest;
+import com.volley.wjh.modelapp.HttpRequest.AsyncHttp.AsyncHttpCallBack;
+import com.volley.wjh.modelapp.HttpRequest.AsyncHttp.AsyncHttpRequest;
 import com.volley.wjh.modelapp.R;
 
 import cz.msebera.android.httpclient.Header;

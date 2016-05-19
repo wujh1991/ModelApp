@@ -178,6 +178,17 @@
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_image_viewer_bg.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_image_viewer_bg.xml"
+<<<<<<< HEAD
+=======
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_divider.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_divider.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_reply_bar_face_bg.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_reply_bar_face_bg.xml"
+>>>>>>> dev
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_divider.xml",
@@ -192,10 +203,13 @@
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_record_btn_orange_bg.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_friend_item_bg.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_friend_item_bg.xml"
     },
     {
+=======
+>>>>>>> dev
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_common_white_btn_bg.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_common_white_btn_bg.xml"
     },
