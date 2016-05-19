@@ -8,12 +8,12 @@
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_reply_bar_camera.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_tooltip_button_middle_with_right.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_button_middle_with_right.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_column_second_grade_color.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_column_second_grade_color.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_tooltip_button_middle_with_right.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_button_middle_with_right.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_tooltip_listview_divider.xml",
@@ -40,20 +40,20 @@
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_record_dialog_bg2.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_common_green_btn_bg.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_common_green_btn_bg.xml"
-    },
-    {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_tooltip_button_middle.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_button_middle.xml"
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_download_original_button.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_download_original_button.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_record_dialog_bg1.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_record_dialog_bg1.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_download_original_button.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_download_original_button.xml"
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_tooltip_button_middle.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_button_middle.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_common_green_btn_bg.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_common_green_btn_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_reply_bar_record_bg.xml",
@@ -104,12 +104,12 @@
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_send_tab_icon.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_column_third_grade_color.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_column_third_grade_color.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_common_dialog_white_bg.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_common_dialog_white_bg.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_column_third_grade_color.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_column_third_grade_color.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_common_check_bg.xml",
@@ -160,12 +160,12 @@
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_button_first.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_bg_photo_window.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_bg_photo_window.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_wq_common_green_btn_bg.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_wq_common_green_btn_bg.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_bg_photo_window.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_bg_photo_window.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_top_delete_bg.xml",
@@ -176,24 +176,24 @@
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_receive_tab_icon.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_divider.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_divider.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_image_viewer_bg.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_image_viewer_bg.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_friend_item_bg.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_friend_item_bg.xml"
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_divider.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_divider.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_reply_bar_face_bg.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_reply_bar_face_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_record_btn_orange_bg.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_record_btn_orange_bg.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_reply_bar_face_bg.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_reply_bar_face_bg.xml"
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_friend_item_bg.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_friend_item_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_common_white_btn_bg.xml",
@@ -220,20 +220,20 @@
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_unread_msg_notify_bg.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_reply_bar_album.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_reply_bar_album.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_cloud_msg_forget_password.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_cloud_msg_forget_password.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_comment_l_bg.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_comment_l_bg.xml"
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_reply_bar_album.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_reply_bar_album.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_comment_l_orange_bg.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_comment_l_orange_bg.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_comment_l_bg.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_comment_l_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_alert_dialog_item_bg.xml",
@@ -244,12 +244,12 @@
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_reply_bar_expand_unchecked.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_common_blue_btn_bg.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_common_blue_btn_bg.xml"
-    },
-    {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_my_progress.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_my_progress.xml"
+    },
+    {
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_common_blue_btn_bg.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_common_blue_btn_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_comment_r_green_bg.xml",
@@ -264,16 +264,16 @@
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_reply_bar_expand_checked.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_contacts_search_btn_bg.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_contacts_search_btn_bg.xml"
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_smily_text_color.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_smily_text_color.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_tooltip_button_last_checked.xml",
         "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_tooltip_button_last_checked.xml"
     },
     {
-        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_smily_text_color.xml",
-        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_smily_text_color.xml"
+        "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_contacts_search_btn_bg.xml",
+        "source": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\bundles\\debug\\res\\drawable\\aliwx_contacts_search_btn_bg.xml"
     },
     {
         "merged": "E:\\AndroidStudioWorkSpace\\ModelApp\\openimSDK\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\aliwx_topbar_icon_message_bg.xml",
