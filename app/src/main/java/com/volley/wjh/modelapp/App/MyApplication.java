@@ -6,11 +6,15 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.baidu.location.LocationClient;
+import com.baidu.mapapi.SDKInitializer;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.umeng.openim.OpenIMAgent;
 import com.volley.wjh.dao.DaoMaster;
 import com.volley.wjh.dao.DaoSession;
+
+
 
 /**
  * Created by wujh on 2016/2/20.
@@ -28,6 +32,9 @@ public class MyApplication extends Application {
     public static DaoMaster mDaoMaster;
     public static DaoSession mDaoSession;
 
+    //百度地图
+    public LocationClient mLocClient;
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -40,6 +47,10 @@ public class MyApplication extends Application {
 
         //GreenDao
         initDao();
+
+        //百度地图
+        SDKInitializer.initialize(getApplicationContext());
+        mLocClient = new LocationClient(this);
     }
 
     public static RequestQueue getHttpQueue(){

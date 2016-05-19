@@ -1,4 +1,4 @@
-package com.volley.wjh.modelapp.HttpRequest;
+package com.volley.wjh.modelapp.HttpRequest.Volley;
 
 import org.apache.commons.lang3.StringUtils;
 import java.util.HashMap;

@@ -1,8 +1,8 @@
-package com.volley.wjh.modelapp.HttpRequest;
+package com.volley.wjh.modelapp.HttpRequest.AsyncHttp;
 
 import com.loopj.android.http.AsyncHttpClient;
-import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
+import com.volley.wjh.modelapp.HttpRequest.AsyncHttp.AsyncHttpCallBack;
 
 /**
  * Created by wujh on 2016/4/7.

@@ -1,4 +1,4 @@
-package com.volley.wjh.modelapp.HttpRequest;
+package com.volley.wjh.modelapp.HttpRequest.Volley;
 
 import com.android.volley.Request;
 import com.volley.wjh.modelapp.App.MyConstant;
@@ -14,8 +14,8 @@ public class GetVolleyHttpUrl {
     public static String getWeatherIngo(){
         HashMap<String,String> hashMap = new HashMap<String,String>();
         hashMap.put("citykey","101010100");
-        return VolleyHttpUrl.urlBuilder(Request.Method.GET,null,"weather_mini"
-                ,hashMap);
+        return VolleyHttpUrl.urlBuilder(Request.Method.GET, null, "weather_mini"
+                , hashMap);
     }
 
     /**
